@@ -2,7 +2,7 @@ import speedtest
 import time
 
 
-def monitor_speed(interval_seconds=60):
+def network_monitor_speed(interval_seconds=60):
     st = speedtest.Speedtest()
 
     download_speed = st.download() / 1_000_000
@@ -19,6 +19,11 @@ def monitor_speed(interval_seconds=60):
     #     time.sleep(interval_seconds)
 
 
+def main():
+    network_monitor_speed()
+
+
+
 if __name__ == "__main__":
     # You can customize the interval_seconds parameter as needed (default is 60 seconds)
-    monitor_speed()
+    main()

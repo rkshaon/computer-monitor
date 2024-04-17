@@ -107,6 +107,12 @@ def display_storage_info():
     print("Used Storage: {} GB".format(round(used / (1024**3), 2)))
     print("Percentage Used: {}%".format(round((used / total_size) * 100, 2)))
 
-if __name__ == "__main__":
+
+def main():
     display_system_info()
     display_storage_info()
+
+
+
+if __name__ == "__main__":
+    main()
