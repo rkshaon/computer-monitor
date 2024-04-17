@@ -1,2 +1,4 @@
 /env
 .DS_Store
+network_speed_monitor/__pycache__
+os_details/__pycache__
