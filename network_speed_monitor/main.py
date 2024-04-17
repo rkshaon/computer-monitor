@@ -1,6 +1,8 @@
 import speedtest
 import time
 
+from loader import main as loader_main
+
 
 def get_network_speed_data(interval_seconds=60):
     st = speedtest.Speedtest()
@@ -15,6 +17,7 @@ def get_network_speed_data(interval_seconds=60):
 def main():
     network_speed_data = None
     network_speed_data = get_network_speed_data()
+    loader_main.main()
     print(network_speed_data)
 
 
